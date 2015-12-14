@@ -16,7 +16,7 @@ module FFaker
 
     private
     def generate_seed seed = nil
-      seed or (1..99999).to_a.sample
+      seed or rand(1..99999)
     end
   end
 end
