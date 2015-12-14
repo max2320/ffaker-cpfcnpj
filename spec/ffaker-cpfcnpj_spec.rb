@@ -5,14 +5,14 @@ require 'ffaker-cpfcnpj'
 
 describe "FfakerCpfcnpj" do
   describe 'Cpf' do
-    subject {Faker::CpfCnpj.cpf }
+    subject {FFaker::CpfCnpj.cpf }
 
     it { should be_valido }
     it { should be_kind_of(Cpf) }
   end
 
   describe 'Cnpj' do
-    subject {Faker::CpfCnpj.cnpj }
+    subject {FFaker::CpfCnpj.cnpj }
 
     it { should be_valido }
     it { should be_kind_of(Cnpj) }

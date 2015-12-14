@@ -1,7 +1,7 @@
 require 'brazilian-rails'
 require 'ffaker-cpfcnpj/brazilian-rails/cpfcnpj'
 
-module Faker
+module FFaker
   module CpfCnpj
     extend ModuleUtils
     extend self
@@ -16,7 +16,7 @@ module Faker
 
     private
     def generate_seed seed = nil
-      seed or (1..99999).to_a.choice
+      seed or (1..99999).to_a.sample
     end
   end
 end
